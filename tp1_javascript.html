@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+       function calcul_moyenne()
+       {
+       
+       	
+         document.write("voici la somme:  "+somme);
+         var moyenne=somme /8;
+         document.write("voila la moyenne   "+moyenne);
+         if (moyenne>=10)
+     
+
+       }
+      
+
+       	function age_test()
+       	 
+       { 
+       	 var age = prompt("donner votre age");
+       	     if (age>100 || age<=0)
+       	  
+       	    {
+       	 	document.bgColor="red";
+       	 	alert ("attention age invalide");
+       	 	}
+       	 else
+       	 	{
+       	 	
+       	 	alert("age valide");
+
+       	 	document.bgColor="green";
+       	 	}
+
+       }
+
+
+
+
+       	 	function simple()
+         { 
+         	var prenom=prompt("donner votre prénom");
+         	var nom = prompt("donner votre nom :");
+         	document.write("<div style='border:2px solid blue; background-color:yellow;width:50%; height:30%; margin:auto; text-align:center; padding-top:25px;font-size:3em;'>");
+         	document.write("<p1 style='color:red';> Bonjour "+ prenom +"  "+ nom+"</p1>");
+
+         	document.write("</div>");
+
+       	 }
+
+       	 function tester_couleur()
+       	 {
+       	 	var couleur =prompt("donner une couleur:");
+       	 	if (couleur == "rouge"|| couleur=="ROUGE")
+       	 		document.bgColor="red";
+       	 	else if (couleur == "vert"|| couleur=="VERT")
+       	 		document.bgColor="green";
+       	 	else if (couleur=="bleu"|| couleur=="BLEU")
+       	       document.bgColor="bleue";
+              else 
+             	alert("couleur invalide");
+
+       	 }
+
+       
+ 
+</script>
+
+<button onclick="calcul_moyenne()">caculer la moyenne </button>
+<button onclick="age_test()">tester l'age </button>
+<button onclick="simple()">affichage simple  </button>
+<button onclick="tester_couleur()">Tester une couleur </button>
+</body>
+</html>

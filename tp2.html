@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function calculer()
+		{
+           var a = document.getElementById('t1').value;
+           var b =document.getElementById('t2').value;
+           var c =Number(a)+Number(b)
+           t3.value = c;
+         }
+	</script>
+</head>
+<body>
+	<fieldset>
+		<legend>Calcultrice</legend>
+	
+	<form>
+		<input type="text" name="t1" id="t1"placeholder="saisir une valeur" >
+		<input type="text" name="t2" id="t2"placeholder="saisir une valeur">
+		<input type="text" name="t3" id="t3" placeholder="resultat" readonly>
+
+		<button onclick="calculer();">Caculer</button>
+	</form>
+	</fieldset>
+	<legend>Relevé de notes</legend>
+		<table border="5" width="50%"> 
+		<tr>  <td>notes1<input type="text" name="t1" id="t1"placeholder="saisir une valeur" ></td>  <td>boutton</td></tr> <tr> <td>votre Moyenne</td></tr>
+		<tr> <td>notes2<input type="text" name="t1" id="t1"placeholder="saisir une valeur" ></td></tr>
+		<tr> <td>notes3<input type="text" name="t1" id="t1"placeholder="saisir une valeur" ></td></tr> <tr> <td>resultat<input type="text" name="t3" id="t3" placeholder="resultat"></td></tr>
+
+		<script type="text/javascript">
+       function calcul_moyenne()
+       {
+       
+       	
+         document.write("voici la somme:  "+somme);
+         var moyenne=somme /8;
+         document.write("voila la moyenne   "+moyenne);
+         if (moyenne>=10)
+
+        } 	
+
+</body>
+</html>
